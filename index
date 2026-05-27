@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahima Sharan | Strategic Portfolio & Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium editorial typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Premium Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">MAHIMA SHARAN<span>.</span></div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#projects">Strategic Matrix</a>
+            <a href="#competitions">Achievements</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="btn-cta">Connect</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Strategy × Analytics × Sustainability</span>
+            <h1>Bridging Macro Analysis & <span class="text-gradient">Data-Driven Product Innovation</span></h1>
+            <p class="tagline">Dual-degree business student at <strong>IIM Bangalore</strong> and <strong>Amity University</strong>. Passionate about solving real-world business problems through rigorous analytics, behavioral finance design, and sustainable execution strategies.</p>
+            
+            <!-- Strategic Focus Anchors -->
+            <div class="focus-tags">
+                <span onclick="scrollToAndFilter('fintech')">#FintechProduct</span>
+                <span onclick="scrollToAndFilter('sustainability')">#ESGAudit</span>
+                <span onclick="scrollToAndFilter('analytics')">#MacroResearch</span>
+                <span onclick="scrollToAndFilter('analytics')">#DataDashboards</span>
+            </div>
+
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">Explore Strategic Matrix</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic & Corporate Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <span class="section-subtitle">Background</span>
+            <h2 class="section-title">Academic & Professional Foundations</h2>
+        </div>
+        
+        <div class="tabs-container">
+            <div class="tabs-list">
+                <button class="tab-btn active" onclick="switchTab(event, 'iimb')">IIM Bangalore</button>
+                <button class="tab-btn" onclick="switchTab(event, 'amity')">Amity University</button>
+                <button class="tab-btn" onclick="switchTab(event, 'infosys')">Infosys Limited</button>
+                <button class="tab-btn" onclick="switchTab(event, 'leadership')">Leadership Roles</button>
+            </div>
+
+            <div class="tabs-content-wrapper">
+                <!-- IIMB Tab -->
+                <div id="iimb" class="tab-content active-content">
+                    <div class="content-header">
+                        <h3>BBA in Digital Business & Entrepreneurship</h3>
+                        <span class="date-badge">2024 – 2027</span>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-card"><span class="stat-val">8.2</span><span class="stat-lbl">CGPA</span></div>
+                        <div class="stat-card"><span class="stat-val">Core Focus</span><span class="stat-lbl">Digital Business Models</span></div>
+                    </div>
+                    <p>Deep engagement with entrepreneurial strategy, product innovation, financial decision-making, and startup ecosystems. Developed a strong foundation in structured executive execution.</p>
+                </div>
+
+                <!-- Amity Tab -->
+                <div id="amity" class="tab-content">
+                    <div class="content-header">
+                        <h3>BA (Hons) in Business Economics</h3>
+                        <span class="date-badge">2023 – 2026</span>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-card"><span class="stat-val">8.3</span><span class="stat-lbl">CGPA</span></div>
+                        <div class="stat-card"><span class="stat-val">3 Years</span><span class="stat-lbl">50% Merit Scholarship</span></div>
+                    </div>
+                    <p>Rigorous training in macroeconomics, financial systems, econometrics, public policy frameworks, and statistical research methodologies.</p>
+                </div>
+
+                <!-- Infosys Tab -->
+                <div id="infosys" class="tab-content">
+                    <div class="content-header">
+                        <h3>Project Intern — Infosys Springboard</h3>
+                        <span class="date-badge">Corporate Internship</span>
+                    </div>
+                    <p>Led a <strong>7-member team</strong> in developing a Power BI-based Food & Beverage analytics dashboard processing 4,000+ consumer records across 20 distinct behavioral variables.</p>
+                    <ul class="bullet-list">
+                        <li><strong>Data Engineering:</strong> Managed end-to-end data preprocessing, cleaning, and Power Query implementation.</li>
+                        <li><strong>Advanced Modeling:</strong> Deployed DAX-based calculations for customer segmentation and sustainability tracking.</li>
+                        <li><strong>Storytelling:</strong> Transformed raw tabular business data into actionable corporate insight dashboards.</li>
+                    </ul>
+                </div>
+
+                <!-- Leadership Tab -->
+                <div id="leadership" class="tab-content">
+                    <div class="content-header">
+                        <h3>Positions of Responsibility</h3>
+                        <span class="date-badge">Executive Leadership</span>
+                    </div>
+                    <ul class="bullet-list">
+                        <li><strong>Vice President @ DRACHMA Finance Society:</strong> Led a 15-member cohort; drove student outreach metrics up by 40% via high-impact finance campaigns and industry partnerships.</li>
+                        <li><strong>Head of Content @ Institution’s Innovation Council (IIC):</strong> Managed institutional communication, newsletters, and digital social matrix assets for Ministry of Education initiatives.</li>
+                        <li><strong>Conference Track Head @ National Conference:</strong> Directed Track 3 (Governance, Sustainability, & Digital Transformation) for a national SDG-oriented academic summit.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filter Matrix -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-subtitle">Portfolio</span>
+            <h2 class="section-title">Strategic Projects Matrix</h2>
+            <p class="section-desc">Filter my practical applications and research blueprints by industry vertical.</p>
+        </div>
+
+        <div class="filter-wrapper">
+            <button class="filter-btn active" onclick="filterProjects('all')">All Initatives</button>
+            <button class="filter-btn" onclick="filterProjects('fintech')">Fintech & Product</button>
+            <button class="filter-btn" onclick="filterProjects('sustainability')">Sustainability & ESG</button>
+            <button class="filter-btn" onclick="filterProjects('analytics')">Macro Research & Analytics</button>
+        </div>
+
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="fintech">
+                <div class="card-meta"><span class="card-category">Fintech Strategy</span></div>
+                <h3>WealthLens Platform</h3>
+                <p>An investment intelligence platform designed to eliminate jargon, layout plain-English risk cards, and automate flexible gig-worker investment modes to minimize behavioral finance anxiety for Indian retail investors.</p>
+                <div class="card-tags"><span>Behavioral Finance</span><span>UX Strategy</span><span>Product Thinking</span></div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="sustainability">
+                <div class="card-meta"><span class="card-category">Venture Capital</span></div>
+                <h3>C.N.V.R.T Fashion</h3>
+                <p>A style-first sustainable brand engineered through 90+ consumer surveys and financial modeling. Structured unit economics projecting a 58% gross margin and 3.4x–6.8x MoIC.</p>
+                <div class="card-tags"><span>Financial Modeling</span><span>Consumer Psychology</span><span>Unit Economics</span></div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="sustainability">
+                <div class="card-meta"><span class="card-category">Blockchain / Carbon</span></div>
+                <h3>CarbonKey Marketplace</h3>
+                <p>A decentralized carbon-credit tokenization platform making marketplace participation highly accessible for Indian SMEs. Optimized UI utilizing an F-pattern dashboard layout.</p>
+                <div class="card-tags"><span>HTML/CSS/JS</span><span>UI Psychology</span><span>SME Sustainability</span></div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="sustainability">
+                <div class="card-meta"><span class="card-category">Field ESG Assessment</span></div>
+                <h3>Plentitude Fragrances Audit</h3>
+                <p>Conducted a field-based ESG operational risk assessment for a manufacturing SME in Greater Noida, mapping waste pathways, energy configurations, and packaging options.</p>
+                <div class="card-tags"><span>ESG Risk</span><span>SME Operations</span><li>Stakeholder Interviews</li></div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-category="analytics">
+                <div class="card-meta"><span class="card-category">Econometrics Research</span></div>
+                <h3>INR/USD Impact on Defence PSUs</h3>
+                <p>A regression analysis (data spanning 2000–2024) exploring how currency volatility impacts stock returns of Indian Defence PSUs, proving significant currency sensitivity for HAL and BEL.</p>
+                <div class="card-tags"><span>Regression</span><span>Macroeconomics</span><span>Stata/Excel</span></div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-category="analytics">
+                <div class="card-meta"><span class="card-category">Climate Global Studies</span></div>
+                <h3>G20 Climate Finance Panel Study</h3>
+                <p>Panel-data study analyzing whether climate financing mechanisms cross-correlate with structural economic growth or create acute localized development-environment trade-offs.</p>
+                <div class="card-tags"><span>Panel Data</span><span>Climate Finance</span><span>Public Policy</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Competitions & Achievements -->
+    <section id="competitions" class="competitions-section">
+        <div class="section-header">
+            <span class="section-subtitle">Excellence</span>
+            <h2 class="section-title">Competitive Track Record</h2>
+        </div>
+        <div class="comp-table-container">
+            <table class="comp-table">
+                <thead>
+                    <tr>
+                        <th>Competition / Hackathon</th>
+                        <th>Host Institution</th>
+                        <th>Standing Achieved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ConsultFin’24</strong></td>
+                        <td>BITS Pilani Goa</td>
+                        <td><span class="rank-badge high">Ranked 5th</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>EcoStrat Case Framework</strong></td>
+                        <td>IIT Delhi</td>
+                        <td><span class="rank-badge">Top 10 Finalist</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strat-Impact Initiative</strong></td>
+                        <td>180DC IIT BHU</td>
+                        <td><span class="rank-badge">Top 20 Finalist</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marketing Mayhem</strong></td>
+                        <td>Indian School of Business (ISB)</td>
+                        <td><span class="rank-badge">National Finalist</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mantravat Strategy Case</strong></td>
+                        <td>IIM Udaipur</td>
+                        <td><span class="rank-badge">National Finalist</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Dual Skill Matrix Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <span class="section-subtitle">Capabilities</span>
+            <h2 class="section-title">Professional Skill Matrix</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category-card">
+                <h3>Technical & Quantitative</h3>
+                <div class="pill-cloud">
+                    <span>Power BI</span>
+                    <span>Advanced MS Excel</span>
+                    <span>Power Query</span>
+                    <span>DAX Expressions</span>
+                    <span>Dashboard Analytics</span>
+                    <span>Financial Modelling</span>
+                    <span>KPI Architecture</span>
+                    <span>Data Visualization</span>
+                    <span>HTML/CSS/JS (Foundational)</span>
+                </div>
+            </div>
+            <div class="skill-category-card">
+                <h3>Strategic & Business Core</h3>
+                <div class="pill-cloud">
+                    <span>Strategic Analysis</span>
+                    <span>ESG Impact Audit</span>
+                    <span>Market Research</span>
+                    <span>Competitive Landscape Strategy</span>
+                    <span>Consumer Behaviour Analysis</span>
+                    <span>Product Thinking</span>
+                    <span>Growth Strategy</span>
+                    <span>German (A2 Level)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Hub -->
+    <footer id="contact" class="footer-section">
+        <div class="footer-container">
+            <h2>Let's Build Strategic Value Together</h2>
+            <p class="footer-cta-text">Available for strategy, fintech product advisory, and business analytics tracks.</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:1301.mahimasharan@gmail.com" class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    1301.mahimasharan@gmail.com
+                </a>
+                <a href="tel:+919311339566" class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    +91 9311339566
+                </a>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    Delhi NCR, India
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a href="https://linkedin.com/in/mahima-sharan-439315297" target="_blank" class="linkedin-btn">Connect on LinkedIn</a>
+                <p class="copyright">&copy; 2026 Mahima Sharan. Built via clean web standards.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
